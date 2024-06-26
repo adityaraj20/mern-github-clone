@@ -19,8 +19,6 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
-console.log("dirname", __dirname);
-
 app.use(
   session({ secret: "keyboard cat", resave: false, saveUninitialized: false })
 );
